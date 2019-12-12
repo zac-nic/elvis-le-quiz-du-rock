@@ -1,0 +1,33 @@
+# fichiers cachés ou temporaires de Mac OS
+.DS_Store
+~*
+Icon?
+
+# dossier de réglages de PHPStorm
+.idea/
+
+#dossier node
+node_modules/
+
+# dossier de cache de sass
+.sass-cache/
+
+# dossier compilé par sass
+web/liaisons/css/
+
+# fichiers cachés ou temporaires de Mac OS .DS_Store ~* Icon? # dossier de réglages de PHPStorm .idea/ # les node_modules sont dans le gitignore node_modules/
+Réalisation de produits numériques interactifs III | 582-502-SF | Techniques d’intégration multimédia | Cégep de Sainte-Foy
+Notes de cours | Automne 2018 Page 10 sur 15
+Semaine 15 – P2 – Le Quiz – Une progressive Web App
+
+# AJOUTER des exceptions pour les bibliothèques JavaScript:
+!node_modules/axios/
+!node_modules/requirejs/
+!node_modules/picturefill/
+
+# Ajouts reliés à la pile Heroku / Composer / PHP vendor/
+.env
+
+# ATTENTION à commenter la ligne des CSS car on en a besoin!
+# dossier compilé par sass
+# assets/css/

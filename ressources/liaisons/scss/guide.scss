@@ -1,0 +1,42 @@
+/**
+ * @author Zachary Nicol-P. <1735193@cegep-ste-foy.qc.ca>
+ * @todo Compléter selon l'énoncé
+*/
+
+/**
+ * ------------------
+ * TABLE DES MATIÈRES
+ * ------------------
+ * Librairies
+ * Utilitaires
+ * Base
+ * Modules
+ * Grille
+ * Règles spécifiques
+ */
+
+/****** Librairies ******/
+@import "../../../node_modules/normalize.scss/normalize.scss";
+@import "../../../node_modules/susy/sass/susy";
+@import "../../../node_modules/susy/sass/plugins/svg-grid";
+
+/**** Utilitaires ****/
+@import "utilitaires/variables";
+
+/****** Base ******/
+@import "base/typo";
+
+/****** Modules ******/
+@import "modules/gds";
+
+/****** Grille ******/
+@import "grille/entete";
+@import "grille/general";
+@import "grille/pied";
+
+/****** Règles spécifiques ******/
+
+body {
+  margin: 50px auto;
+  padding: 0 50px;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guide de styles</title>
+    <link rel="stylesheet" href="web/liaisons/css/guide.css">
+</head>
+<body>
+    <div class="conteneur">
+        <h1 class="gds__titre">Guide de styles</h1>
+        <h2 class="gds__sousTitre">Palette de couleurs</h2>
+        <ul class="gds__palette">
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--bleuMoyen"></div>
+                <p class="gds__description"><code>$bleuMoyen</code> - #358ae0</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--bleuPale"></div>
+                <p class="gds__description"><code>$bleuPale</code> - #68a8e8</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--vertLime"></div>
+                <p class="gds__description"><code>$vertLime</code> - #bbd531</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--bleuMinuit"></div>
+                <p class="gds__description"><code>$bleuMinuit</code> - #012d61</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--bleuMarin"></div>
+                <p class="gds__description"><code>$bleuMarin</code> - #2678b5</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--noir"></div>
+                <p class="gds__description"><code>$noir</code> - #000000</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--blanc"></div>
+                <p class="gds__description"><code>$blanc</code> - #ffffff</p>
+            </li>
+            <li class="gds__paletteItem">
+                <div class="gds__paletteCouleur gds__paletteCouleur--texte"></div>
+                <p class="gds__description"><code>$texte</code> - <code>$noir</code> plus clair (<em>lighten</em>) de 22%</p>
+            </li>
+        </ul>
+        <h2 class="gds__sousTitre">Typographie</h2>
+        <h1>Titre niveau 1</h1>
+        <p class="gds__description">Mobile : Futura, 26px, centré, graisse de 500, marges à 0</p>
+        <p class="gds__description">Bureau : 36px</p>
+        <h2>Titre niveau 2</h2>
+        <p class="gds__description">Mobile : Futura, 22px, centré, graisse de 500, 1.5em marge supérieure, 0.5em marge inférieure</p>
+        <p class="gds__description">Bureau : 28px</p>
+        <h3>Titre niveau 3</h3>
+        <p class="gds__description">Mobile : Futura, 18px, graisse de 500</p>
+        <p class="gds__description">Bureau : 20px</p>
+        <h2 class="gds__sousTitre">Éléments de style</h2>
+        <h3>Ombre portée (mixin <code>ombrePortee</code>)</h3>
+        <div class="gds__style gds__style--ombrePortee"></div>
+        <p class="gds__description">X : 0px, Y : 0px, étendue 15px, <code>$noir</code> à 90% de transparence</p>
+        <h2 class="gds__sousTitre">Éléments interactifs</h2>
+        <h3>Bouton (<code>.bouton</code>)</h3>
+        <a href="#" class="bouton">Bouton</a>
+        <p class="gds__description">
+            Arrière-plan : <code>$bleuMoyen</code><br>
+            Couleur : $blanc <br>
+            <code>border-radius</code> : 10px <br>
+            Taille de la fonte : 15px <br>
+            Graisse de la fonte : <code>bold</code><br>
+            <em>Padding</em> : 10px 20px
+        </p>
+        <a href="#" class="bouton bouton--hover">Bouton <em>hover</em></a>
+        <p class="gds__description">Arrière-plan : <code>$bleuMoyen</code> foncé de 10%</p>
+        <h3>Bouton bleu foncé (<code>.bouton--bleuFonce</code>)</h3>
+        <a href="#" class="bouton bouton--bleuFonce">Bouton bleu foncé</a>
+        <p class="gds__description">
+            Arrière-plan : <code>$bleuMinuit</code>
+        </p>
+        <a href="#" class="bouton bouton--bleuFonce--hover">Bouton bleu foncé <em>hover</em></a>
+        <p class="gds__description">
+            Arrière-plan : <code>$bleuMinuit</code> foncé de 10%
+        </p>
+    </div>
+</body>
+</html>

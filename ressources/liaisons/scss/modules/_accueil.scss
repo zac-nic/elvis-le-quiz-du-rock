@@ -1,0 +1,175 @@
+/**
+ * @author Zachary Nicol-P. <1735193@cegep-ste-foy.qc.ca>
+*/
+
+// Animations
+.btn__degrade {
+  animation-name: btn__degrade;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.titre__degrade {
+  animation-name: titre__degrade;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btn__degrade {
+  0%, 100% {
+    background-color: darkgoldenrod;
+  }
+  25% {
+    background-color: goldenrod;
+  }
+  50% {
+    background-color: gold;
+  }
+  75% {
+    background-color: goldenrod;
+  }
+}
+
+@keyframes titre__degrade {
+  0%, 100% {
+    color: darkgoldenrod;
+  }
+  25% {
+    color: goldenrod;
+  }
+  50% {
+    color: gold;
+  }
+  75% {
+    color: goldenrod;
+  }
+}
+
+// Styles de la page accueil
+.accueil {
+  &__btnCommencer {
+    background-color: darkgoldenrod;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: goldenrod 3px 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    &:hover {
+      background-color: darken(darkgoldenrod, 2);
+      padding: 12px 22px;
+      font-size: 1.6rem;
+      transition: ease-in;
+      transition-duration: 200ms;
+    }
+  }
+
+  &__description {
+    padding: 15px 10px;
+    width: 100%;
+    color: white;
+    @media(min-width: 1024px) {
+      padding: 10% 0 5% 0;
+    }
+    @media(min-width: 1440px) {
+      padding: 5% 0 5% 0;
+    }
+  }
+}
+
+.background {
+  height: 100%;
+  width: auto;
+  position: fixed;
+  top: 0;
+  z-index: -10;
+  background-color: rgba(white, 0.8);
+  @media (min-width: 1600px) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.grandConteneur {
+  color: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.petitConteneur {
+  margin: 5% 10%;
+  @media(min-width: 800px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media(min-width: 1440px) {
+    margin: 5% 20%;
+  }
+}
+
+.instructions {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2% 5% 6% 5%;
+  border-radius: 5px;
+  margin-bottom: 10%;
+  color: white;
+}
+
+.img {
+  &__index {
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: goldenrod 5px 5px;
+    @media(min-width: 800px) {
+      margin-right: 15px;
+    }
+  }
+
+  &__question1 {
+    width: 100%;
+    margin: 0;
+    padding-top: 10%;
+    @media(max-width: 1000px) {
+      display: none;
+      padding: 0;
+    }
+  }
+
+  &__question2 {
+    width: 80%;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  &__question3 {
+    width: 80%;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  &__resultat {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: span(8 of 12);
+    box-shadow: goldenrod 5px 5px;
+    @media(min-width: 800px) {
+      margin-right: 15px;
+      width: span(6 of 12);
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background-color: darkgoldenrod;
+  color: black;
+  text-align: center;
+}

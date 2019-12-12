@@ -1,0 +1,88 @@
+<!--
+@author Zachary Nicol-P. <1735193@cegep-ste-foy.qc.ca>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-title" content="black">
+    <title>Elvis "Le Quiz du Rock n' Roll" Presley</title>
+    <link href="liaisons/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Elvis 'Le Quiz du Rock n' Roll' Presley est le quiz ultime sur le King!">
+</head>
+<body>
+<header role="banner">
+    <h1 class="entete titre__degrade">Elvis <span class="entete__quiz">"Le Quiz du Rock n' Roll"</span> Presley</h1>
+</header>
+<div class="grandConteneur">
+    <main>
+        <div class="petitConteneur">
+            <img class="img__index" src="liaisons/images/index.jpg" alt="Le king"/>
+            <div class="instructions">
+                <p class="accueil__description">
+                    <b>Elvis Aaron Presley</b> est un chanteur et acteur américain né le 8 Janvier 1935 à Tupelo, dans
+                    le
+                    Mississippi,
+                    et
+                    mort le 16 août 1977, à Memphis dans le Tennessee. Surnommé The King (« le Roi »), il est l'une des
+                    icônes
+                    culturelles majeures du XXe siècle.
+                </p>
+                <a href="question.html" class="accueil__btnCommencer btn__degrade">COMMENCER LE
+                    QUIZ!</a>
+            </div>
+        </div>
+    </main>
+</div>
+<footer class="footer" role="contentinfo">
+    <small>Zachary Nicol-P. © Travail réalisé dans le cadre du cours de Réalisation de Produit Numérique Interactif
+        III - Automne 2019</small>
+</footer>
+<img class="background" src="liaisons/images/background_mobile.jpg"
+     srcset="liaisons/images/background_mobile.jpg 412w,liaisons/images/background_tablette.jpg 800w,liaisons/images/background.jpg 1200w"
+     alt="arrière-plan"/>
+<script>
+    // Enregistrement du SW // On vérifie d'abord si les SW sont supportés par le navigateur
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceworker.js').then(function (inscription) {
+            console.log('L\'enregistrement du SW a réussi.');
+        }).catch(function (erreur) {
+            console.log('L\'enregistrement du SW a échoué: ' + erreur);
+        });
+    } </script>
+<script src="logging.js"></script>
+<script> window.addEventListener('beforeinstallprompt', (evenement) => {
+    evenement.prompt();
+// Attendre que l'utilisateur réponde à l'invite d'installation
+    evenement.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+            console.log('L\'utilisateur a accepté l\'invite d\'installation');
+        } else {
+            console.log('L\'utilisateur a refusé l\'invite d\'installation');
+        }
+    });
+});
+</script>
+</body>
+</html>

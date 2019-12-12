@@ -1,0 +1,11 @@
+{
+  "retroactions": {
+    "positive": "Bonne réponse! Félicitations!",
+    "negative": "Oups! Vous n’avez pas choisi la bonne réponse!"
+  },
+  "explications": {
+    "1": "Son succès musical qui l’a mené à la célébrité s’intitule « Heartbreak Hotel » (1956). Il s’agit d’une chanson inspirée par un article d’un journal local racontant un suicide.",
+    "2": "Tout au long de sa carrière, Elvis a enregistré plus de 600 chansons sans jamais en avoir écrit une seule!",
+    "3": "Elvis a rencontré Priscilla alors qu’il était un militaire déployé en Allemagne. À l’époque, Elvis avait 24 ans et Priscilla en avait 14. Huit ans plus tard, les deux étaient mariés et on eut une petite fille nommée Lisa Marie Presley."
+  }
+}

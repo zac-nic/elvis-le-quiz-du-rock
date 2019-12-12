@@ -1,0 +1,19 @@
+/**
+ * @author Zachary Nicol-P. <1735193@cegep-ste-foy.qc.ca>
+*/
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+  font-family: $fontePrimaire;
+  font-weight: 500;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.375;
+  /* facteur multiplicateur de la taille de la police 1.375x16=22 */
+  @media (min-width: $bureau) {
+    line-height: 1.5;
+  }
+}

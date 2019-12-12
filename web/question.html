@@ -1,0 +1,193 @@
+<!--
+@author Zachary Nicol-P. <1735193@cegep-ste-foy.qc.ca>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-title" content="black">
+    <title>Elvis "Le Quiz du Rock n' Roll" Presley</title>
+    <link href="liaisons/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Elvis 'Le Quiz du Rock n' Roll' Presley est le quiz ultime sur le King!">
+</head>
+<body>
+<header role="banner">
+    <h1 class="entete titre__degrade">Elvis<span class="entete__quiz"> "Le Quiz du Rock n' Roll" </span>Presley</h1>
+</header>
+<div class="grandConteneur">
+    <p id="messageNoJS">Vous devez <i>obligatoirement</i> <b>répondre aux trois questions</b> avant de valider
+        vos réponses.</p>
+    <main class="questionsMain">
+        <form id="formulaireQuestion" class="formulaireQuestion" action="resultats.php" novalidate>
+            <section id="Q1">
+                <fieldset class="fieldsetQuestion">
+                    <legend class="question">Quelle est la chanson qui a fait connaître Elvis partout en Amérique ?
+                    </legend>
+                    <p id="retroaction1" class="retroaction"></p>
+                    <ul class="choixReponses">
+                        <li id="1-0" class="choix">
+                            <input id="Q1-0" type="radio" name="Q1" value="0" required>
+                            <label for="Q1-0">A. <b>Don’t be cruel</b></label>
+                            <img src="liaisons/images/dont_be_cruel.jpg" class="img__question1" alt="dont be cruel"/>
+                        </li>
+                        <li id="1-1" class="choix">
+                            <input id="Q1-1" type="radio" name="Q1" value="1">
+                            <label for="Q1-1">B. <b>Blue Suede Shoes</b></label>
+                            <img src="liaisons/images/blue_suede_shoes.jpg" class="img__question1"
+                                 alt="blue suede shoes"/>
+                        </li>
+                        <li id="1-2" class="choix">
+                            <input id="Q1-2" type="radio" name="Q1" value="2">
+                            <label for="Q1-2">C. <b>Heartbreak Hotel</b></label>
+                            <img src="liaisons/images/heartbreak_hotel.jpg" class="img__question1"
+                                 alt="heartbreak hotel"/>
+                        </li>
+                        <li id="1-3" class="choix">
+                            <input id="Q1-3" type="radio" name="Q1" value="3">
+                            <label for="Q1-3">D. <b>Jailhouse Rock</b></label>
+                            <img src="liaisons/images/jailhouse_rock.jpg" class="img__question1" alt="jailhouse rock"/>
+                        </li>
+                    </ul>
+                    <div class="centrerVertical">
+                        <p id="explication1" class="explication--hidden"></p>
+                        <input type="button" id="soumettreQ1" class="btnValider" value="VALIDER MA RÉPONSE"/>
+                        <input type="button" id="btnSuivant1" class="btnValider" value="QUESTION SUIVANTE"/>
+                    </div>
+                </fieldset>
+            </section>
+            <section id="Q2">
+                <fieldset class="fieldsetQuestion">
+                    <legend class="question">Quel pourcentage de ses chansons a-t-il écrit lui-même ?</legend>
+                    <p id="retroaction2" class="retroaction"></p>
+                    <ul class="choixReponses">
+                        <li id="2-0" class="choix">
+                            <input id="Q2-0" type="radio" name="Q2" value="0" required>
+                            <label for="Q2-0">A. <b>Aucune</b></label>
+                        </li>
+                        <li id="2-1" class="choix">
+                            <input id="Q2-1" type="radio" name="Q2" value="1">
+                            <label for="Q2-1">B. <b>25%</b></label>
+                        </li>
+                        <li id="2-2" class="choix">
+                            <input id="Q2-2" type="radio" name="Q2" value="2">
+                            <label for="Q2-2">C. <b>30%</b></label>
+                        </li>
+                        <li id="2-3" class="choix">
+                            <input id="Q2-3" type="radio" name="Q2" value="3">
+                            <label for="Q2-3">D. <b>60%</b></label>
+                        </li>
+                    </ul>
+                    <div class="img">
+                        <img src="liaisons/images/question2.jpg" class="img__question2" alt="elvis dans un studio"/>
+                    </div>
+
+                    <div class="centrerVertical">
+                        <p id="explication2" class="explication--hidden"></p>
+                        <input type="button" id="soumettreQ2" class="btnValider" value="VALIDER MA RÉPONSE"/>
+                        <input type="button" id="btnSuivant2" class="btnValider" value="QUESTION SUIVANTE"/>
+                    </div>
+                </fieldset>
+            </section>
+            <section id="Q3">
+                <fieldset class="fieldsetQuestion">
+                    <legend class="question">Quel âge avait la femme d’Elvis, Priscilla Beaulieu, au moment de leur
+                        première rencontre en 1959 ?
+                    </legend>
+                    <p id="retroaction3" class="retroaction"></p>
+                    <ul class="choixReponses">
+                        <li id="3-0" class="choix">
+                            <input id="Q3-0" type="radio" name="Q3" value="0" required>
+                            <label for="Q3-0">A. <b>14 ans</b></label>
+                        </li>
+                        <li id="3-1" class="choix">
+                            <input id="Q3-1" type="radio" name="Q3" value="1">
+                            <label for="Q3-1">B. <b>18 ans</b></label>
+                        </li>
+                        <li id="3-2" class="choix">
+                            <input id="Q3-2" type="radio" name="Q3" value="2">
+                            <label for="Q3-2">C. <b>21 ans</b></label>
+                        </li>
+                        <li id="3-3" class="choix">
+                            <input id="Q3-3" type="radio" name="Q3" value="3">
+                            <label for="Q3-3">D. <b>24 ans</b></label>
+                        </li>
+                    </ul>
+                    <div class="img">
+                        <img src="liaisons/images/question3.jpg" class="img__question3" alt="elvis et priscilla"/>
+                    </div>
+                    <div class="centrerVertical">
+                        <p id="explication3" class="explication--hidden"></p>
+                        <input type="button" id="soumettreQ3" class="btnValider" value="VALIDER MA RÉPONSE"/>
+                        <input type="button" id="btnSuivant3" class="btnValider" value="VOIR MON RÉSULTAT"/>
+                    </div>
+                </fieldset>
+            </section>
+            <input type="submit" id='validerQuiz' class="btnValider validerQuiz" name="validerQuiz"
+                   value="VALIDER MES CHOIX"/>
+        </form>
+        <section id="resultat">
+            <div class="conteneurResultat">
+                <img src="liaisons/images/resultat.jpg" class="img__resultat" alt="Le king"/>
+                <div class="instructions">
+                    <p class="resultatFinal">Votre résultat final :</p>
+                    <p class="obtenu">Vous avez obtenu <span id="pourcentage" class="pourcentage"></span><span
+                            class="pourcentage">%</span></p>
+                    <a href="index.html" class="accueil__btnCommencer">RECOMMENCER LE QUIZ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<footer class="footer" role="contentinfo">
+    <small>Zachary Nicol-P. © Travail réalisé dans le cadre du cours de Réalisation de Produit Numérique Interactif
+        III - Automne 2019</small>
+</footer>
+<img class="background" src="liaisons/images/background_mobile.jpg"
+     srcset="liaisons/images/background_mobile.jpg 412w,liaisons/images/background_tablette.jpg 800w,liaisons/images/background.jpg 1200w"
+     alt="arrière-plan"/>
+<script src="../node_modules/requirejs/require.js" data-main="liaisons/js/main.js" defer></script>
+<script>
+    // Enregistrement du SW // On vérifie d'abord si les SW sont supportés par le navigateur
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceworker.js').then(function (inscription) {
+            console.log('L\'enregistrement du SW a réussi.');
+        }).catch(function (erreur) {
+            console.log('L\'enregistrement du SW a échoué: ' + erreur);
+        });
+    } </script>
+<script src="logging.js"></script>
+<script> window.addEventListener('beforeinstallprompt', (evenement) => {
+    evenement.prompt();
+// Attendre que l'utilisateur réponde à l'invite d'installation
+    evenement.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+            console.log('L\'utilisateur a accepté l\'invite d\'installation');
+        } else {
+            console.log('L\'utilisateur a refusé l\'invite d\'installation');
+        }
+    });
+});
+</script>
+</body>
+</html>

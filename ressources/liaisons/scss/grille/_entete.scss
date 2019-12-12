@@ -1,0 +1,33 @@
+/**
+ * @author Zachary Nicol-P. <1735193@cegep-ste-foy.qc.ca>
+*/
+.entete {
+  font-family: 'Airstream';
+  font-size: 3rem;
+  font-weight: lighter;
+  color: darkgoldenrod;
+  margin: 10px 10%;
+  padding: 2px;
+  text-align: center;
+  border: 15px double black;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: black 8px 8px;
+  @media (min-width: 800px) {
+    font-size: 4rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 5rem;
+  }
+
+  &__quiz {
+    color: black;
+    font-size: 4rem;
+    @media (min-width: 800px) {
+      font-size: 5rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 6rem;
+    }
+  }
+}

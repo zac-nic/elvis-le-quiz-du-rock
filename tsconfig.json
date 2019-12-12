@@ -1,0 +1,11 @@
+{
+  "compilerOptions": { 
+    "module": "amd",
+    "target": "es6",
+    "outDir": "./web/liaisons/js",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
