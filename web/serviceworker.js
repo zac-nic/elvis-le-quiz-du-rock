@@ -30,6 +30,9 @@ self.addEventListener('install', function(event) {
                 'node_modules/requirejs/package.json',
                 'node_modules/requirejs/README.md',
                 'node_modules/requirejs/require.js',
+                'node_modules/axios/dist/axios.min.js',
+                'node_modules/jquery/dist/jquery.min.js',
+                'node_modules/picturefill/dist/picturefill.min.js',
                 'liaisons/images/background.jpg',
                 'liaisons/images/background_mobile.jpg',
                 'liaisons/images/background_tablette.jpg',
@@ -41,6 +44,11 @@ self.addEventListener('install', function(event) {
                 'liaisons/images/question2.jpg',
                 'liaisons/images/question3.jpg',
                 'liaisons/images/resultat.jpg',
+                'browserconfig.xml',
+                'manifest.json',
+                'serviceworker.js',
+                'serviceworker-cache-polyfill.js',
+                '.htaccess'
             ]);
         })
     );
